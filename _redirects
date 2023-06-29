@@ -1,5 +1,5 @@
 # Redireccionamientos
 / /index.html 
-/servicios /servicios.html 
-/clientes /clientes.html 
-/galeria /galeria.html 
+/servicios /../rep2/servicios.html 
+/clientes /../rep2/clientes.html 
+/galeria /../rep2/galeria.html 
