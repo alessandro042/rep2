@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meccri - Sitio Web Oficial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #222;
+            color: #eee;
+        }
+
+        .navbar {
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 60px;
+            padding-left: 20px;
+        }
+        .navbar a {
+            color: #eee;
+            text-decoration: none;
+            font-size: 18px;
+            letter-spacing: 4px;
+            margin-right: 22px;
+            transition: font-size 0.3s;
+        }
+        .navbar a:hover {
+            transform: scale(1.2);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: #eee;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            color: #eee;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #7a7a7a;
+        }
+
+        .carousel-img {
+            max-height: 500px;
+        }
+
+        .contact-info {
+            margin-top: 50px;
+            text-align: center;
+            color: #eee;
+        }
+
+        .contact-info h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #fd0404;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact-item {
+            margin-bottom: 30px;
+        }
+
+        .contact-item i {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .services {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #fd0404;
+        }
+
+        .services p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .services li {
+            margin-bottom: 10px;
+        }
+
+        .services li i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo3.png" alt="Meccri Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../MCRI/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../MCRI/clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../MCRI/galeria.html">Galería</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/cn1.png" class="d-block w-100 carousel-img" alt="Imagen de proyectos Meccri">
+            </div>
+            <div class="carousel-item">
+                <img src="img/cn2.jpg" class="d-block w-100 carousel-img" alt="Imagen de proyectos Meccri">
+            </div>
+            <div class="carousel-item">
+                <img src="img/cn3.jpg" class="d-block w-100 carousel-img" alt="Imagen de proyectos Meccri">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <div class="container services">
+        <h2>Servicios</h2>
+        <ul>
+            <li><i class="fas fa-check"></i>Mantenimiento Residencial</li>
+            <li><i class="fas fa-check"></i>Mantenimiento Comercial</li>
+            <li><i class="fas fa-check"></i>Obra Civil</li>
+            <li><i class="fas fa-check"></i>Proyecto Arquitectónico con Recorrido Virtual para Comercialización</li>
+            <li><i class="fas fa-check"></i>Memoria de Cálculo y Planos Estructurales</li>
+            <li><i class="fas fa-check"></i>Servicio de Director Responsable de Obra (DRO) dentro del Estado de Morelos</li>
+            <li><i class="fas fa-check"></i>Construcción y Mantenimiento de Plantas Tratadoras de Agua (Residenciales, Industrial y Municipal)</li>
+            <li><i class="fas fa-check"></i>Obra Pública</li>
+            <li><i class="fas fa-check"></i>Remodelaciones</li>
+            <li><i class="fas fa-check"></i>Construcción o Remodelación con Crédito Infonavit</li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="container contact-info">
+        <h2>Información de Contacto</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Dirección</h3>
+                    <p>Calle Principal, Ciudad, País</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Teléfono</h3>
+                    <p>+1 234 567 890</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Correo Electrónico</h3>
+                    <p>info@meccri.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
